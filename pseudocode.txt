@@ -1,0 +1,26 @@
+Program Shopping-Cart
+
+STORE cart with map[key,value] 
+
+STORE choose with number -> number
+1. Add 
+2. Subtrac
+0. Done
+
+while choose != 0
+    IF choose == 1
+        STORE id_product with number
+        IF cart INCLUDE id_product
+            SET cart[id_product] += 1
+        ELSE
+            SET cart[id_product] = 1
+        PRINT "Product Added"
+    ELSE IF choose == 2
+        STORE id_product with number
+        IF cart INCLUDE id_product
+            SET cart[id_product] -= 1
+        ELSE
+            PRINT "Product no exist in cart"
+        PRINT "Product Subtrac"
+
+PRINT cart;
